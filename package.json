@@ -4,9 +4,10 @@
   "description": "app for helping the farmers",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server"
   },
-  "author": "Vishal & team",
+  "author": "Vishal, Srijit , Sanjib, Sarthak",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.9",
