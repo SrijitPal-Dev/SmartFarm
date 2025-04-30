@@ -9,11 +9,7 @@ app.set('view engine','ejs');
 app.set('views',path.join(__dirname,'/views'));
 app.use(express.static(path.join(__dirname,'/public')));
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-});
-
-app.get('/home',(req,res)=>{
+app.get('/',(req,res)=>{
     res.render('index.ejs');
 });
 
@@ -41,7 +37,7 @@ app.get('/products/:id',(req,res)=>{
     if(product==undefined){
         product=seeds.find((p)=>{return p.id===id});
     }
-    console.log(product);
+    // console.log(product);
     res.render('prod_details.ejs',{product});
 });
 
